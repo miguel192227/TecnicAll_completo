@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Tecnic-All</string>
+    <string name="text_login">Iniciar sesión</string>
+    <string name="text_input_correo">Correo electrónico</string>
+    <string name="text_input_contraseña">Contraseña</string>
+    <string name="text_olvido_contraseña">¿Se te olvidó tu contraseña?</string>
+    <string name="text_ir_registro">¿Nuevo Usuario? Regístrate ahora</string>
+    <string name="text_registro">Regístrate ahora</string>
+    <string name="text_input_nombre_apellido">Nombres y apellidos</string>
+    <string name="text_input_repetir_contraseña">Confirmar contraseña</string>
+    <string name="text_btn_registrar">Registrar</string>
+    <string name="text_btn_acceder">Acceder</string>
+</resources>
