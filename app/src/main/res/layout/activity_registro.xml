@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fillViewport="true">
+            xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/scrollViewRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:fillViewport="true">
 
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".RegistroActivity">
@@ -18,7 +17,7 @@
             android:background="@color/colorPrimary"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"/>
 
         <View
             android:id="@+id/olaViewRegistro"
@@ -27,7 +26,7 @@
             android:background="@drawable/ola"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cabeceraViewRegistro" />
+            app:layout_constraintTop_toBottomOf="@+id/cabeceraViewRegistro"/>
 
         <ImageView
             android:id="@+id/personImageViewRegistro"
@@ -37,7 +36,7 @@
             android:layout_marginEnd="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_person_add" />
+            app:srcCompat="@drawable/ic_person_add"/>
 
         <TextView
             android:id="@+id/cabeceraTextViewRegistro"
@@ -51,7 +50,7 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/personImageViewRegistro"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"/>
 
         <EditText
             android:id="@+id/inputNombresApellidos"
@@ -68,7 +67,7 @@
             android:padding="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/olaViewRegistro" />
+            app:layout_constraintTop_toBottomOf="@+id/olaViewRegistro"/>
 
         <EditText
             android:id="@+id/inputCorreoRegistro"
@@ -86,7 +85,7 @@
             android:padding="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/inputNombresApellidos" />
+            app:layout_constraintTop_toBottomOf="@+id/inputNombresApellidos"/>
 
         <EditText
             android:id="@+id/inputContraseñaRegistro"
@@ -105,7 +104,7 @@
             android:padding="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/inputCorreoRegistro" />
+            app:layout_constraintTop_toBottomOf="@+id/inputCorreoRegistro"/>
 
         <EditText
             android:id="@+id/inputRepetirContraseñaRegistro"
@@ -124,7 +123,7 @@
             android:padding="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/inputContraseñaRegistro" />
+            app:layout_constraintTop_toBottomOf="@+id/inputContraseñaRegistro"/>
 
         <LinearLayout
             android:id="@+id/linerLayoutRegistro"
@@ -147,8 +146,11 @@
                 android:text="@string/text_btn_registrar"
                 android:textColor="@android:color/white"
                 android:textSize="18sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"/>
 
+            <Space
+                android:id="@+id/spaceRegistro"
+                android:layout_width="8dp" android:layout_height="wrap_content" />
             <Button
                 android:id="@+id/buttonAcceder"
                 android:layout_width="0dp"
@@ -158,7 +160,7 @@
                 android:text="@string/text_btn_acceder"
                 android:textColor="@android:color/white"
                 android:textSize="18sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"/>
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
