@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
-            android:id="@+id/scrollViewRegistro"
+            android:id="@+id/registryScrollView"
             android:layout_width="match_parent"
             android:layout_height="match_parent" android:fillViewport="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".RegistroActivity">
+        tools:context=".RegistryActivity">
 
         <View
             android:id="@+id/cabeceraViewRegistro"
@@ -53,7 +53,7 @@
             app:layout_constraintTop_toTopOf="parent"/>
 
         <EditText
-            android:id="@+id/inputNombresApellidos"
+            android:id="@+id/userNameEditText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
@@ -70,7 +70,7 @@
             app:layout_constraintTop_toBottomOf="@+id/olaViewRegistro"/>
 
         <EditText
-            android:id="@+id/inputCorreoRegistro"
+            android:id="@+id/emailRegistryEditText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
@@ -85,10 +85,10 @@
             android:padding="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/inputNombresApellidos"/>
+            app:layout_constraintTop_toBottomOf="@+id/userNameEditText"/>
 
         <EditText
-            android:id="@+id/inputContraseñaRegistro"
+            android:id="@+id/passwordEditText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
@@ -96,7 +96,6 @@
             android:layout_marginEnd="32dp"
             android:background="@drawable/round_border"
             android:drawableStart="@drawable/ic_baseline_lock_24"
-            android:drawableEnd="@drawable/ic_ojooculto"
             android:drawablePadding="16dp"
             android:ems="10"
             android:hint="@string/text_input_contraseña"
@@ -104,7 +103,7 @@
             android:padding="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/inputCorreoRegistro"/>
+            app:layout_constraintTop_toBottomOf="@+id/emailRegistryEditText"/>
 
         <EditText
             android:id="@+id/inputRepetirContraseñaRegistro"
@@ -115,7 +114,6 @@
             android:layout_marginEnd="32dp"
             android:background="@drawable/round_border"
             android:drawableStart="@drawable/ic_baseline_lock_24"
-            android:drawableEnd="@drawable/ic_ojooculto"
             android:drawablePadding="16dp"
             android:ems="10"
             android:hint="@string/text_input_repetir_contraseña"
@@ -123,8 +121,28 @@
             android:padding="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/inputContraseñaRegistro"/>
+            app:layout_constraintTop_toBottomOf="@+id/passwordEditText"/>
 
+        <ImageView
+            android:id="@+id/eyeRegistryImageView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/passwordEditText"
+            app:layout_constraintHorizontal_bias="0.953"
+            app:layout_constraintStart_toStartOf="@+id/passwordEditText"
+            app:layout_constraintTop_toTopOf="@+id/passwordEditText"
+            app:srcCompat="@drawable/ic_show_password_24"/>
+        <ImageView
+            android:id="@+id/imageViewEyeShowPassRegistry2"
+            android:layout_width="30dp" android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/inputRepetirContraseñaRegistro"
+            app:layout_constraintHorizontal_bias="0.953"
+            app:layout_constraintStart_toStartOf="@+id/inputRepetirContraseñaRegistro"
+            app:layout_constraintTop_toTopOf="@+id/inputRepetirContraseñaRegistro" app:srcCompat="@drawable/ic_show_password_24"/>
         <LinearLayout
             android:id="@+id/linerLayoutRegistro"
             android:layout_width="0dp"
@@ -138,7 +156,7 @@
             app:layout_constraintTop_toBottomOf="@+id/inputRepetirContraseñaRegistro">
 
             <Button
-                android:id="@+id/buttonRegistrar"
+                android:id="@+id/signUpButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

@@ -5,4 +5,6 @@
     <color name="colorAccent">#9be7ff</color>
     <color name="colorPerson">#ffffff</color>
     <color name="colorButtonBlack">#000000</color>
+    <color name="colorTextWhite">#ffffff</color>
+    <color name="colorSemiTransparente">#80000000</color>
 </resources>
