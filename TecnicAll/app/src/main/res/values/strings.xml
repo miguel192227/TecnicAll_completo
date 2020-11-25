@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Tecnic-All</string>
+    <string name="text_login">Iniciar sesión</string>
+    <string name="text_input_correo">Correo electrónico</string>
+    <string name="text_input_contraseña">Contraseña</string>
+    <string name="text_olvido_contraseña">¿Se te olvidó tu contraseña?</string>
+    <string name="text_ir_registro">¿Nuevo Usuario? Regístrate ahora</string>
+    <string name="text_registro">Regístrate ahora</string>
+    <string name="text_input_nombre_apellido">Nombres y apellidos</string>
+    <string name="text_input_repetir_contraseña">Confirmar contraseña</string>
+    <string name="text_btn_registrar">Registrar</string>
+    <string name="text_btn_acceder">Acceder</string>
+    <string name="text_olvido_contraseña_popup">¿Se te olvidó tu contraseña?</string>
+    <string name="text_escribe_correo">Escribe tu correo electrónico</string>
+    <string name="text_enviar_enlace">Enviar enlace</string>
+    <string name="text_cancelar_enlace">Cancelar</string>
+    <string name="prefs_file">com.example.tecnicall.PREFERENCE_FILE_KEY</string>
+    <string name="facebook_app_id">333616797896714</string>
+    <string name="fb_login_protocol_scheme">fb333616797896714</string>
+    <string-array name="electro">
+        <item>Seleccione---</item>
+        <item>Lavadoras</item>
+        <item>Secadoras</item>
+        <item>Nevecones</item>
+        <item>Aires acondicionados</item>
+    </string-array>
+    <string-array name="electro2">
+        <item>Seleccione---</item>
+        <item>Lavadoras</item>
+        <item>Secadoras</item>
+        <item>Nevecones</item>
+        <item>Aires acondicionados</item>
+        <item>Neveras</item>
+        <item>Televisores (LCD y LED)</item>
+    </string-array>
+    <string-array name="electro3">
+        <item>Seleccione---</item>
+        <item>Lavadoras</item>
+        <item>Secadoras</item>
+        <item>Nevecones</item>
+        <item>Aires acondicionados</item>
+        <item>Televisores</item>
+    </string-array>
+</resources>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Instalaciones">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Para solicitar el instalamiento por favor llene el siguiente formulario"
+                android:textColor="@color/colorButtonBlack"
+                android:textSize="36sp"
+                tools:layout_conversion_absoluteHeight="92dp"
+                tools:layout_conversion_absoluteWidth="343dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp" />
+
+            <EditText
+                android:id="@+id/nom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:gravity="center_horizontal"
+                android:hint="Ingrese su nombre completo"
+                android:background="@drawable/round_border"
+                android:ems="10"
+                android:textColorHint="@color/colorSemiTransparente"
+                android:inputType="text"
+                android:textSize="25sp"
+                tools:layout_conversion_absoluteHeight="45dp"
+                tools:layout_conversion_absoluteWidth="236dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="92dp" />
+
+            <EditText
+                android:id="@+id/tel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:gravity="center_horizontal"
+                android:hint="Ingrese su numero telefonico"
+                android:background="@drawable/round_border"
+                android:ems="10"
+                android:textColorHint="@color/colorSemiTransparente"
+                android:inputType="phone"
+                android:textSize="25sp"
+                tools:layout_conversion_absoluteHeight="45dp"
+                tools:layout_conversion_absoluteWidth="236dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="92dp" />
+
+
+            <EditText
+                android:id="@+id/dire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:gravity="center_horizontal"
+                android:hint="Ingrese su direccion"
+                android:background="@drawable/round_border"
+                android:ems="10"
+                android:textColorHint="@color/colorSemiTransparente"
+                android:inputType="text"
+                android:textSize="25sp"
+                tools:layout_conversion_absoluteHeight="45dp"
+                tools:layout_conversion_absoluteWidth="236dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="92dp" />
+
+            <EditText
+                android:id="@+id/marca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:gravity="center_horizontal"
+                android:hint="marca del electrodomestico"
+                android:background="@drawable/round_border"
+                android:ems="10"
+                android:textColorHint="@color/colorSemiTransparente"
+                android:inputType="text"
+                android:textSize="25sp"
+                tools:layout_conversion_absoluteHeight="45dp"
+                tools:layout_conversion_absoluteWidth="236dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="92dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Seleccione los dias que tiene disponible para hacer la instalacion"
+                android:textColor="@color/colorButtonBlack"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/lunes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lunes"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/martes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Martes"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/miercoles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Miercoles"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/jueves"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jueves"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/viernes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Viernes"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/sabado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sabado"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/soli"
+                android:layout_width="228dp"
+                android:layout_height="58dp"
+                android:text="Solicitar"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:background="@color/colorAccent" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

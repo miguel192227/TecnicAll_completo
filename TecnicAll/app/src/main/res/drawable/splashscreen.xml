@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/colorPrimary"/>
+    <item android:bottom="150dp">
+        <bitmap android:src="@mipmap/miplogo"
+            android:gravity="center"/>
+    </item>
+    <item android:bottom="0dp">
+        <bitmap android:src="@mipmap/miptextsplash"
+            android:gravity="center"/>
+    </item>
+</layer-list>
