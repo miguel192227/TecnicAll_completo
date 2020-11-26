@@ -38,14 +38,14 @@ class Reparaciones : AppCompatActivity() {
     private fun enviar(){
         soli.setOnClickListener {
             val queue = Volley.newRequestQueue(this)
-            val url = "http://192.168.1.6/EnvioCorreo/Mailer.php?para=miguelangelpabonherrera@gmail.com&mensaje=saludoooooooooo"
+            val url = "http://192.168.1.18/EnvioCorreo/Mailer.php?para=miguelangelpabonherrera@gmail.com&mensaje=Electrodomestico: Televisor - Nombre: Cesar Pabon - Telefono:320 704 8472 - Direccion: Barrio la milagrosa - Marca: Lg - Dia(s) disponible(s): Martes, Miercoles"
 
             // Request a string response from the provided URL.
             val stringRequest = StringRequest(
                 Request.Method.GET, url,
                 Response.Listener<String> { response ->
 
-                    Toast.makeText(this,  "Enviado", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this,  "Enviado", Toast.LENGTH_SHORT).show()
                 },
                 Response.ErrorListener  { error ->   error.printStackTrace()})
 
